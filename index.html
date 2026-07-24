@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocord | Cacao y Chocolate Artesanal Maya Chontal – Comalcalco, Tabasco</title>
+    <meta name="description" content="Cacao 100% artesanal desde 1870 en Comalcalco, Tabasco: grano lavado, fermentado y beneficiado, chocolate de mesa, nibs tostados a leña, manteca y cacao en polvo. Agricultura agroecológica premiada. Cotiza por WhatsApp.">
+    <meta name="keywords" content="cacao artesanal Tabasco, chocolate maya chontal, cacao Comalcalco, venta de cacao por mayoreo, nibs de cacao tostado, manteca de cacao natural, chocolate de mesa artesanal, hacienda de cacao, Chocord">
+    <meta name="author" content="Chocord">
+    <meta property="og:title" content="Chocord | Cacao y Chocolate Artesanal Maya Chontal">
+    <meta property="og:description" content="Del árbol a tu mesa: cacao 100% artesanal cultivado y secado al sol en nuestra hacienda familiar de Comalcalco, Tabasco, desde 1870.">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#2E1D0D">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/logo.png" type="image/png">
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader" role="status" aria-label="Cargando">
+    <div class="loader-inner">
+        <img src="img/logo.png" alt="Chocord — Secadora de Cacao" class="loader-logo">
+        <div class="loader-spinner"></div>
+        <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+    </div>
+</div>
+
+<!-- NAVBAR -->
+<header id="navbar">
+    <div class="nav-wrap">
+        <a href="#hero" class="nav-brand" aria-label="Inicio">
+            <img src="img/logo.png" alt="Chocord" class="nav-logo-img">
+            <span class="nav-logo-text">Cho<em>cord</em></span>
+        </a>
+        <nav class="nav-links" aria-label="Principal">
+            <a href="#colecciones">Productos</a>
+            <a href="#especialidades">Nuestra Hacienda</a>
+            <a href="#proceso">Proceso</a>
+            <a href="#catalogo-visual">Galería</a>
+            <a href="#testimonios">Reseñas</a>
+        </nav>
+        <div class="nav-actions">
+            <a href="https://wa.me/529931358045" target="_blank" rel="noopener" class="btn-nav-wa">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+                WhatsApp
+            </a>
+            <a href="#colecciones" class="btn-nav-primary">Ver Productos</a>
+        </div>
+        <button class="nav-burger" id="nav-burger" aria-label="Menú" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+
+<!-- MOBILE MENU -->
+<div id="nav-mobile" role="dialog" aria-modal="true" aria-label="Menú de navegación">
+    <div class="nm-header">
+        <img src="img/logo.png" alt="Chocord" class="nm-logo">
+        <button id="nav-close" aria-label="Cerrar menú">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        </button>
+    </div>
+    <nav class="nm-nav">
+        <a href="#colecciones" class="nm-link">
+            <span class="nm-num">01</span>
+            <span class="nm-text">Productos</span>
+            <svg class="nm-arrow" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" width="18" height="18"><path d="M5 10h10M11 6l4 4-4 4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#especialidades" class="nm-link">
+            <span class="nm-num">02</span>
+            <span class="nm-text">Nuestra Hacienda</span>
+            <svg class="nm-arrow" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" width="18" height="18"><path d="M5 10h10M11 6l4 4-4 4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#proceso" class="nm-link">
+            <span class="nm-num">03</span>
+            <span class="nm-text">Proceso</span>
+            <svg class="nm-arrow" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" width="18" height="18"><path d="M5 10h10M11 6l4 4-4 4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#testimonios" class="nm-link">
+            <span class="nm-num">04</span>
+            <span class="nm-text">Reseñas</span>
+            <svg class="nm-arrow" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" width="18" height="18"><path d="M5 10h10M11 6l4 4-4 4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#catalogo-visual" class="nm-link">
+            <span class="nm-num">05</span>
+            <span class="nm-text">Galería</span>
+            <svg class="nm-arrow" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" width="18" height="18"><path d="M5 10h10M11 6l4 4-4 4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#contacto" class="nm-link">
+            <span class="nm-num">06</span>
+            <span class="nm-text">Contacto</span>
+            <svg class="nm-arrow" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" width="18" height="18"><path d="M5 10h10M11 6l4 4-4 4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+    </nav>
+    <div class="nm-footer">
+        <a href="https://wa.me/529931358045" target="_blank" rel="noopener" class="nm-wa-btn">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+            Escríbenos por WhatsApp
+        </a>
+        <div class="nm-social">
+            <a href="https://www.facebook.com/Chocord" target="_blank" rel="noopener" aria-label="Facebook">FB</a>
+            <a href="https://wa.me/529931358045" target="_blank" rel="noopener" aria-label="WhatsApp">WA</a>
+        </div>
+    </div>
+</div>
+
+<main>
+
+<!-- ═══════ HERO ═══════ -->
+<section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-wrap">
+        <div class="hero-content">
+            <div class="h-anim" style="--d:.3s">
+                <span class="hero-badge"><span class="badge-dot"></span>Cacao 100% Artesanal · Comalcalco, Tabasco</span>
+            </div>
+            <h1 class="hero-title h-anim" style="--d:.55s">
+                Cacao &amp; Chocolate<br>que <span class="hero-red">Transforman</span><br>tu Paladar.
+            </h1>
+            <p class="hero-sub h-anim" style="--d:.8s">
+                Cultivamos, fermentamos y secamos cada grano al sol en nuestra hacienda familiar de Comalcalco. Cacao 100% puro —sin aditivos ni conservadores— con la receta ancestral que heredamos de nuestros abuelos Maya Chontal.
+            </p>
+            <div class="hero-ctas h-anim" style="--d:1.0s">
+                <a href="https://wa.me/529931358045?text=Hola%20Chocord%2C%20quisiera%20solicitar%20una%20cotizaci%C3%B3n." target="_blank" rel="noopener" class="btn-primary">
+                    Solicitar Cotización
+                    <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+                </a>
+                <a href="#colecciones" class="btn-secondary">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="18" height="18"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/></svg>
+                    Ver Nuestros Productos
+                </a>
+            </div>
+            <div class="hero-stats h-anim" style="--d:1.25s">
+                <div class="hs"><strong>150<span>+</span></strong><small>Años de Tradición</small></div>
+                <div class="hs-sep"></div>
+                <div class="hs"><strong>100<span>%</span></strong><small>Cacao Puro y Natural</small></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════ MARQUEE ═══════ -->
+<div class="marquee-section" aria-hidden="true">
+    <div class="marquee-track">
+        <span>Cacao 100% Artesanal</span><span class="mdot"></span>
+        <span>Secado al Sol</span><span class="mdot"></span>
+        <span>Receta Maya Chontal</span><span class="mdot"></span>
+        <span>Sin Aditivos ni Conservadores</span><span class="mdot"></span>
+        <span>Comalcalco, Tabasco</span><span class="mdot"></span>
+        <span>Agricultura Agroecológica</span><span class="mdot"></span>
+        <span>Tradición Familiar desde 1870</span><span class="mdot"></span>
+        <span>Cacao 100% Artesanal</span><span class="mdot"></span>
+        <span>Secado al Sol</span><span class="mdot"></span>
+        <span>Receta Maya Chontal</span><span class="mdot"></span>
+        <span>Sin Aditivos ni Conservadores</span><span class="mdot"></span>
+        <span>Comalcalco, Tabasco</span><span class="mdot"></span>
+        <span>Agricultura Agroecológica</span><span class="mdot"></span>
+        <span>Tradición Familiar desde 1870</span><span class="mdot"></span>
+    </div>
+</div>
+
+<!-- ═══════ ESPECIALIDADES ═══════ -->
+<section id="especialidades" class="s-dark">
+    <div class="s-wrap">
+        <div class="s-head reveal">
+            <span class="s-label">Nuestra Hacienda</span>
+            <h2 class="s-title s-title-light">Dos Formas de Vivir<br>el Cacao Chocord</h2>
+            <p class="s-sub s-sub-light">Del grano recién cosechado al chocolate listo para disfrutar: dos líneas pensadas para cada necesidad.</p>
+        </div>
+        <div class="espec-grid">
+            <article class="espec-card has-bg reveal" style="--delay:.1s; background-image:url('img/chocord-mazorcas-arbol.jpg');">
+                <span class="espec-num">01</span>
+                <div class="espec-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="26" height="26"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <h3>Cacao en Grano</h3>
+                <p>Lavado, fermentado o beneficiado — grano seleccionado a mano y secado artesanalmente al sol para chocolateros, reposteros y amantes del cacao puro.</p>
+                <a href="#colecciones" class="espec-link">Ver precios por kilo <svg viewBox="0 0 20 20" fill="currentColor" width="14" height="14"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg></a>
+            </article>
+            <article class="espec-card reveal" style="--delay:.25s">
+                <span class="espec-num">02</span>
+                <div class="espec-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="26" height="26"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <h3>Chocord Ancestral</h3>
+                <p>Nibs, pasta, chocolate de mesa, manteca y cacao en polvo tostados a la leña de chipilín sobre comal de barro — la receta milenaria Maya Chontal, sin aditivos ni conservadores.</p>
+                <a href="#colecciones" class="espec-link">Descubrir la línea Ancestral <svg viewBox="0 0 20 20" fill="currentColor" width="14" height="14"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg></a>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════ EXPERIENCIA PARALLAX · SECADO ═══════ -->
+<section id="secado-vivo" class="parallax-story parallax-secado" aria-label="Secado artesanal del cacao">
+    <div class="parallax-inner reveal">
+        <span class="parallax-kicker">Tiempo, sol y oficio</span>
+        <p class="parallax-index" aria-hidden="true">01</p>
+        <h2>El sabor también<br>se cultiva con paciencia.</h2>
+        <p>Cada grano descansa bajo el sol de Tabasco hasta alcanzar el punto que conserva su aroma, su carácter y la identidad de nuestra tierra.</p>
+        <a href="#proceso" class="parallax-link">Conocer nuestro proceso <span aria-hidden="true">↓</span></a>
+    </div>
+</section>
+
+<!-- ═══════ COLECCIONES ═══════ -->
+<section id="colecciones" class="s-gray">
+    <div class="s-wrap">
+        <div class="cols-header">
+            <div class="reveal">
+                <span class="s-label">Cosecha 2026</span>
+                <h2 class="s-title">Nuestros Productos<br>de Cacao y Chocolate</h2>
+            </div>
+            <a href="https://wa.me/529931358045?text=Hola%20Chocord%2C%20me%20gustar%C3%ADa%20conocer%20su%20cat%C3%A1logo%20completo%20de%20productos." target="_blank" rel="noopener" class="btn-outline-dark reveal">Cotizar por WhatsApp →</a>
+        </div>
+        <div class="cols-grid">
+
+            <!-- Mazorcas de cacao -->
+            <article class="col-card reveal" style="--delay:.05s">
+                <div class="col-img">
+                    <span class="col-tag">Materia Prima</span>
+                    <img src="img/chocord-mazorcas-arbol.jpg" alt="Mazorcas de cacao maduras en el árbol, hacienda Chocord en Comalcalco, Tabasco">
+                </div>
+                <div class="col-info">
+                    <h3>Mazorcas de Cacao</h3>
+                    <p>Variedades Almendra Blanca, CCN-51, FSV-41, IMC-67, Criollo y Forastero, cosechadas a mano en su punto óptimo.</p>
+                    <div class="col-foot">
+                        <a href="https://wa.me/529931358045?text=Hola%20Chocord%2C%20quisiera%20preguntar%20por%20disponibilidad%20de%20Mazorcas%20de%20Cacao." target="_blank" rel="noopener" style="font-size:.85rem;font-weight:600;color:inherit;text-decoration:none;display:flex;align-items:center;gap:6px;">Preguntar disponibilidad <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M5 10h10M11 6l4 4-4 4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Cacao en grano -->
+            <article class="col-card reveal" style="--delay:.15s">
+                <div class="col-img">
+                    <span class="col-tag">Grano</span>
+                    <img src="img/chocord-grano-empacado.jpg" alt="Cacao en grano lavado, fermentado y beneficiado empacado por Chocord">
+                </div>
+                <div class="col-info">
+                    <h3>Cacao Lavado, Fermentado y Beneficiado</h3>
+                    <p>Tres procesos artesanales, tres perfiles de sabor. Precio de mayoreo disponible en compras superiores a 30 kg.</p>
+                    <div class="col-foot">
+                        <a href="https://wa.me/529931358045?text=Hola%20Chocord%2C%20quisiera%20cotizar%20Cacao%20en%20Grano%20(Lavado%2C%20Fermentado%20o%20Beneficiado)." target="_blank" rel="noopener" style="font-size:.85rem;font-weight:600;color:inherit;text-decoration:none;display:flex;align-items:center;gap:6px;">Ver precios y cotizar <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M5 10h10M11 6l4 4-4 4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Nibs tostados -->
+            <article class="col-card reveal" style="--delay:.25s">
+                <div class="col-img">
+                    <span class="col-tag">Ancestral</span>
+                    <img src="img/chocord-nibs-tostado.jpg" alt="Nibs de cacao tostado a la leña, textura crujiente, línea Chocord Ancestral">
+                </div>
+                <div class="col-info">
+                    <h3>Nibs de Cacao a la Leña</h3>
+                    <p>Tostados sobre comal de barro con leña de chipilín, pelados o sin pelar, con o sin canela. El snack más puro del cacao.</p>
+                    <div class="col-foot">
+                        <a href="https://wa.me/529931358045?text=Hola%20Chocord%2C%20quisiera%20cotizar%20Nibs%20de%20Cacao%20Tostado." target="_blank" rel="noopener" style="font-size:.85rem;font-weight:600;color:inherit;text-decoration:none;display:flex;align-items:center;gap:6px;">Cotizar Nibs <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M5 10h10M11 6l4 4-4 4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Chocolate de mesa -->
+            <article class="col-card reveal" style="--delay:.10s">
+                <div class="col-img">
+                    <span class="col-tag">Ancestral</span>
+                    <img src="img/chocord-chocolate-mesa.jpg" alt="Chocolate de mesa artesanal Chocord elaborado con cacao 100% puro">
+                </div>
+                <div class="col-info">
+                    <h3>Chocolate de Mesa Artesanal</h3>
+                    <p>Tablillas 100% cacao, con canela y azúcar, con almendras o con leche — molidas en piedra, listas para hervir.</p>
+                    <div class="col-foot">
+                        <a href="https://wa.me/529931358045?text=Hola%20Chocord%2C%20quisiera%20cotizar%20Chocolate%20de%20Mesa%20Artesanal." target="_blank" rel="noopener" style="font-size:.85rem;font-weight:600;color:inherit;text-decoration:none;display:flex;align-items:center;gap:6px;">Cotizar Chocolate <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M5 10h10M11 6l4 4-4 4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Manteca de cacao -->
+            <article class="col-card reveal" style="--delay:.20s">
+                <div class="col-img">
+                    <span class="col-tag">Derivado</span>
+                    <img src="img/chocord-manteca-cacao.jpg" alt="Manteca de cacao natural y chocolate artesanal Chocord, 100% pureza">
+                </div>
+                <div class="col-info">
+                    <h3>Manteca de Cacao Natural</h3>
+                    <p>Grasa vegetal 100% pura extraída del grano, ideal para chocolatería y cosmética natural. Disponible por kilo y mayoreo (25 kg).</p>
+                    <div class="col-foot">
+                        <a href="https://wa.me/529931358045?text=Hola%20Chocord%2C%20quisiera%20cotizar%20Manteca%20de%20Cacao%20Natural." target="_blank" rel="noopener" style="font-size:.85rem;font-weight:600;color:inherit;text-decoration:none;display:flex;align-items:center;gap:6px;">Cotizar Manteca <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M5 10h10M11 6l4 4-4 4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Cacao en polvo -->
+            <article class="col-card reveal" style="--delay:.30s">
+                <div class="col-img">
+                    <span class="col-tag">Derivado</span>
+                    <img src="img/chocord-cacao-polvo-bebida.jpg" alt="Bebida tradicional de cacao Chocord, preparada con cacao en polvo y polvillo tabasqueño">
+                </div>
+                <div class="col-info">
+                    <h3>Cacao en Polvo y Polvillo Tabasqueño</h3>
+                    <p>Puro para repostería, o con maíz tostado, azúcar y canela al estilo tradicional — ideal para bebidas frías o calientes.</p>
+                    <div class="col-foot">
+                        <a href="https://wa.me/529931358045?text=Hola%20Chocord%2C%20quisiera%20cotizar%20Cacao%20en%20Polvo%20o%20Polvillo%20Tabasque%C3%B1o." target="_blank" rel="noopener" style="font-size:.85rem;font-weight:600;color:inherit;text-decoration:none;display:flex;align-items:center;gap:6px;">Cotizar Cacao en Polvo <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M5 10h10M11 6l4 4-4 4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<!-- ═══════ EXPERIENCIA PARALLAX · ORIGEN ═══════ -->
+<section id="origen-vivo" class="parallax-story parallax-origen" aria-label="Mazorcas de cacao en la hacienda">
+    <div class="parallax-inner parallax-inner-right reveal">
+        <span class="parallax-kicker">Origen Comalcalco</span>
+        <p class="parallax-index" aria-hidden="true">02</p>
+        <h2>Todo comienza<br>entre nuestros árboles.</h2>
+        <p>Seleccionamos las mazorcas una a una, respetando su maduración y el equilibrio natural de una hacienda cultivada con prácticas agroecológicas.</p>
+        <a href="#beneficios" class="parallax-link">Por qué elegir Chocord <span aria-hidden="true">↓</span></a>
+    </div>
+</section>
+
+<!-- ═══════ PROCESO ═══════ -->
+<section id="proceso" class="s-white">
+    <div class="s-wrap">
+        <div class="s-head s-head-center reveal">
+            <span class="s-label s-label-center">Así Trabajamos</span>
+            <h2 class="s-title">De la Mazorca a tu Mesa<br>en Cuatro Pasos</h2>
+            <p class="s-sub s-sub-center">Un proceso artesanal y transparente, tal como se ha hecho en nuestra hacienda desde 1870.</p>
+        </div>
+        <div class="process-grid">
+            <div class="process-step reveal" style="--delay:.05s">
+                <div class="step-num"><span>01</span></div>
+                <h3>Cosecha Selecta</h3>
+                <p>Elegimos a mano cada mazorca en su punto justo de maduración dentro de la hacienda.</p>
+            </div>
+            <div class="process-step reveal" style="--delay:.15s">
+                <div class="step-num"><span>02</span></div>
+                <h3>Fermentado o Lavado</h3>
+                <p>Procesamos el grano según el perfil de sabor que buscamos: intenso, equilibrado o ligero.</p>
+            </div>
+            <div class="process-step reveal" style="--delay:.25s">
+                <div class="step-num"><span>03</span></div>
+                <h3>Secado al Sol</h3>
+                <p>Cada grano se seca artesanalmente al sol, sin prisas, para conservar aroma y nutrientes.</p>
+            </div>
+            <div class="process-step reveal" style="--delay:.35s">
+                <div class="step-num step-num-red"><span>04</span></div>
+                <h3>Tueste Ancestral y Entrega</h3>
+                <p>Tostamos a la leña sobre comal de barro y coordinamos tu entrega o envío.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════ EXPERIENCIA PARALLAX · LEGADO ═══════ -->
+<section id="legado-vivo" class="parallax-story parallax-legado" aria-label="Nibs de cacao tostado artesanalmente">
+    <div class="parallax-inner reveal">
+        <span class="parallax-kicker">Receta Maya Chontal</span>
+        <p class="parallax-index" aria-hidden="true">03</p>
+        <h2>Una memoria que<br>se prueba en cada bocado.</h2>
+        <p>El tueste a la leña y el comal de barro transforman el cacao con el mismo cuidado que nuestra familia ha transmitido durante generaciones.</p>
+        <a href="#catalogo-visual" class="parallax-link">Explorar la historia y el menú <span aria-hidden="true">↓</span></a>
+    </div>
+</section>
+
+<!-- ═══════ CATÁLOGO VISUAL ═══════ -->
+<section id="catalogo-visual" class="s-white visual-catalog">
+    <div class="s-wrap">
+        <div class="catalog-intro">
+            <div class="reveal">
+                <span class="s-label">Archivo Chocord</span>
+                <h2 class="s-title">Nuestra Historia, el Cacao<br>y el Menú en Imágenes</h2>
+            </div>
+            <p class="s-sub reveal">Reunimos aquí el material de la hacienda para que conozcas quiénes somos, cómo trabajamos y las presentaciones disponibles. Toca cualquier imagen para verla completa.</p>
+        </div>
+
+        <div class="catalog-group">
+            <div class="catalog-group-head reveal">
+                <div>
+                    <span class="catalog-number">01</span>
+                    <h3>Quiénes somos</h3>
+                </div>
+                <p>El origen familiar, los procesos y la esencia de Hacienda Chocord.</p>
+            </div>
+            <div class="catalog-grid catalog-grid-brand">
+                <a class="catalog-card catalog-card-wide reveal" href="img/WhatsApp Image 2026-07-22 at 7.06.04 PM (1).jpeg" target="_blank" rel="noopener" aria-label="Abrir información sobre los procesos y derivados de cacao">
+                    <img src="img/WhatsApp Image 2026-07-22 at 7.06.04 PM (1).jpeg" alt="Presentación de Chocord sobre procesos del cacao y lista de derivados" loading="lazy" decoding="async">
+                    <span>Procesos y derivados</span>
+                </a>
+                <a class="catalog-card catalog-card-wide reveal" style="--delay:.12s" href="img/WhatsApp Image 2026-07-22 at 7.06.04 PM.jpeg" target="_blank" rel="noopener" aria-label="Abrir presentación de Hacienda Chocord">
+                    <img src="img/WhatsApp Image 2026-07-22 at 7.06.04 PM.jpeg" alt="Presentación de Hacienda Chocord, identidad, contacto y trabajo familiar" loading="lazy" decoding="async">
+                    <span>Hacienda Chocord</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="catalog-group">
+            <div class="catalog-group-head reveal">
+                <div>
+                    <span class="catalog-number">02</span>
+                    <h3>Guía para elegir tu cacao</h3>
+                </div>
+                <p>Diferencias, usos y características de cada proceso del grano.</p>
+            </div>
+            <div class="catalog-grid catalog-grid-guide">
+                <a class="catalog-card reveal" href="img/WhatsApp Image 2026-07-22 at 8.27.09 PM.jpeg" target="_blank" rel="noopener" aria-label="Abrir guía de cacao, lámina uno">
+                    <img src="img/WhatsApp Image 2026-07-22 at 8.27.09 PM.jpeg" alt="Guía informativa Chocord sobre tipos y características del cacao, lámina uno" loading="lazy" decoding="async">
+                    <span>Guía del cacao · 01</span>
+                </a>
+                <a class="catalog-card reveal" style="--delay:.06s" href="img/WhatsApp Image 2026-07-22 at 8.27.10 PM (1).jpeg" target="_blank" rel="noopener" aria-label="Abrir guía de cacao, lámina dos">
+                    <img src="img/WhatsApp Image 2026-07-22 at 8.27.10 PM (1).jpeg" alt="Guía informativa Chocord sobre tipos y características del cacao, lámina dos" loading="lazy" decoding="async">
+                    <span>Guía del cacao · 02</span>
+                </a>
+                <a class="catalog-card reveal" style="--delay:.12s" href="img/WhatsApp Image 2026-07-22 at 8.27.10 PM.jpeg" target="_blank" rel="noopener" aria-label="Abrir guía de cacao, lámina tres">
+                    <img src="img/WhatsApp Image 2026-07-22 at 8.27.10 PM.jpeg" alt="Guía informativa Chocord sobre tipos y características del cacao, lámina tres" loading="lazy" decoding="async">
+                    <span>Guía del cacao · 03</span>
+                </a>
+                <a class="catalog-card reveal" href="img/WhatsApp Image 2026-07-22 at 8.27.11 PM (1).jpeg" target="_blank" rel="noopener" aria-label="Abrir guía de cacao, lámina cuatro">
+                    <img src="img/WhatsApp Image 2026-07-22 at 8.27.11 PM (1).jpeg" alt="Guía informativa Chocord sobre tipos y características del cacao, lámina cuatro" loading="lazy" decoding="async">
+                    <span>Guía del cacao · 04</span>
+                </a>
+                <a class="catalog-card reveal" style="--delay:.06s" href="img/WhatsApp Image 2026-07-22 at 8.27.11 PM (2).jpeg" target="_blank" rel="noopener" aria-label="Abrir guía de cacao, lámina cinco">
+                    <img src="img/WhatsApp Image 2026-07-22 at 8.27.11 PM (2).jpeg" alt="Guía informativa Chocord sobre tipos y características del cacao, lámina cinco" loading="lazy" decoding="async">
+                    <span>Guía del cacao · 05</span>
+                </a>
+                <a class="catalog-card reveal" style="--delay:.12s" href="img/WhatsApp Image 2026-07-22 at 8.27.11 PM.jpeg" target="_blank" rel="noopener" aria-label="Abrir guía de cacao, lámina seis">
+                    <img src="img/WhatsApp Image 2026-07-22 at 8.27.11 PM.jpeg" alt="Guía informativa Chocord sobre tipos y características del cacao, lámina seis" loading="lazy" decoding="async">
+                    <span>Guía del cacao · 06</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="catalog-group">
+            <div class="catalog-group-head reveal">
+                <div>
+                    <span class="catalog-number">03</span>
+                    <h3>Menú Chocord</h3>
+                </div>
+                <p>Productos, presentaciones y referencias de precio. Consulta disponibilidad y vigencia por WhatsApp.</p>
+            </div>
+            <div class="catalog-grid catalog-grid-menu">
+                <a class="catalog-card reveal" href="img/WhatsApp Image 2026-07-22 at 9.27.48 PM.jpeg" target="_blank" rel="noopener" aria-label="Abrir portada de Chocord Secadora de Cacao">
+                    <img src="img/WhatsApp Image 2026-07-22 at 9.27.48 PM.jpeg" alt="Portada del catálogo Chocord Secadora de Cacao" loading="lazy" decoding="async">
+                    <span>Catálogo · Portada</span>
+                </a>
+                <a class="catalog-card reveal" style="--delay:.05s" href="img/WhatsApp Image 2026-07-22 at 9.27.49 PM (1).jpeg" target="_blank" rel="noopener" aria-label="Abrir catálogo de cacao fermentado y mazorcas">
+                    <img src="img/WhatsApp Image 2026-07-22 at 9.27.49 PM (1).jpeg" alt="Catálogo Chocord de cacao fermentado y mazorcas de cacao" loading="lazy" decoding="async">
+                    <span>Fermentado y mazorcas</span>
+                </a>
+                <a class="catalog-card reveal" style="--delay:.10s" href="img/WhatsApp Image 2026-07-22 at 9.27.49 PM.jpeg" target="_blank" rel="noopener" aria-label="Abrir catálogo de cacao lavado y beneficiado">
+                    <img src="img/WhatsApp Image 2026-07-22 at 9.27.49 PM.jpeg" alt="Catálogo Chocord de cacao lavado y cacao beneficiado" loading="lazy" decoding="async">
+                    <span>Lavado y beneficiado</span>
+                </a>
+                <a class="catalog-card reveal" style="--delay:.15s" href="img/WhatsApp Image 2026-07-22 at 9.27.50 PM.jpeg" target="_blank" rel="noopener" aria-label="Abrir portada de Chocord Ancestral">
+                    <img src="img/WhatsApp Image 2026-07-22 at 9.27.50 PM.jpeg" alt="Portada de Chocord Ancestral, receta milenaria Maya Chontal" loading="lazy" decoding="async">
+                    <span>Línea Ancestral</span>
+                </a>
+                <a class="catalog-card reveal" href="img/WhatsApp Image 2026-07-22 at 9.27.51 PM.jpeg" target="_blank" rel="noopener" aria-label="Abrir menú de nibs de cacao">
+                    <img src="img/WhatsApp Image 2026-07-22 at 9.27.51 PM.jpeg" alt="Menú Chocord de nibs de cacao tostado a la leña" loading="lazy" decoding="async">
+                    <span>Nibs de cacao</span>
+                </a>
+                <a class="catalog-card reveal" style="--delay:.05s" href="img/WhatsApp Image 2026-07-22 at 9.27.52 PM.jpeg" target="_blank" rel="noopener" aria-label="Abrir menú de pasta y polvo de cacao">
+                    <img src="img/WhatsApp Image 2026-07-22 at 9.27.52 PM.jpeg" alt="Menú Chocord de pasta de cacao artesanal y cacao en polvo" loading="lazy" decoding="async">
+                    <span>Pasta y cacao en polvo</span>
+                </a>
+                <a class="catalog-card reveal" style="--delay:.10s" href="img/WhatsApp Image 2026-07-22 at 9.27.53 PM (1).jpeg" target="_blank" rel="noopener" aria-label="Abrir menú de chocolates y manteca de cacao">
+                    <img src="img/WhatsApp Image 2026-07-22 at 9.27.53 PM (1).jpeg" alt="Menú Chocord de chocolates artesanales y manteca de cacao natural" loading="lazy" decoding="async">
+                    <span>Chocolate y manteca</span>
+                </a>
+                <a class="catalog-card reveal" style="--delay:.15s" href="img/WhatsApp Image 2026-07-22 at 9.27.53 PM.jpeg" target="_blank" rel="noopener" aria-label="Abrir menú de veladoras y cacao natural">
+                    <img src="img/WhatsApp Image 2026-07-22 at 9.27.53 PM.jpeg" alt="Menú Chocord de veladoras artesanales y productos de cacao natural" loading="lazy" decoding="async">
+                    <span>Derivados artesanales</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════ EXPERIENCIA PARALLAX · PUREZA ═══════ -->
+<section id="pureza-viva" class="parallax-story parallax-pureza" aria-label="Bebida tradicional de cacao">
+    <div class="parallax-inner parallax-inner-right reveal">
+        <span class="parallax-kicker">Del grano a tu mesa</span>
+        <p class="parallax-index" aria-hidden="true">04</p>
+        <h2>Puro cacao.<br>Nada que esconder.</h2>
+        <p>Ingredientes reconocibles, procesos transparentes y el sabor profundo de un producto hecho sin atajos, sin aditivos y sin conservadores.</p>
+        <a href="https://wa.me/529931358045?text=Hola%20Chocord%2C%20quisiera%20conocer%20la%20disponibilidad%20de%20sus%20productos." target="_blank" rel="noopener" class="parallax-link">Consultar disponibilidad <span aria-hidden="true">↗</span></a>
+    </div>
+</section>
+
+<!-- ═══════ BENEFICIOS ═══════ -->
+<section id="beneficios" class="s-gray">
+    <div class="s-wrap">
+        <div class="s-head reveal">
+            <span class="s-label">¿Por Qué Chocord?</span>
+            <h2 class="s-title">El Sabor de una Tradición<br>de más de 150 Años</h2>
+        </div>
+        <div class="benefits-grid">
+            <div class="ben-card reveal" style="--delay:.05s"><div class="ben-icon">🌱</div><h3>Agricultura Agroecológica</h3><p>Cultivo libre de químicos, con técnicas reconocidas con premios nacionales en agroecología.</p></div>
+            <div class="ben-card reveal" style="--delay:.12s"><div class="ben-icon">🔥</div><h3>Tueste a la Leña</h3><p>Nibs y chocolate tostados artesanalmente sobre comal de barro con leña de chipilín.</p></div>
+            <div class="ben-card reveal" style="--delay:.19s"><div class="ben-icon">☀️</div><h3>Secado 100% al Sol</h3><p>Sin secadoras industriales: cada grano conserva su aroma y nutrientes de forma natural.</p></div>
+            <div class="ben-card reveal" style="--delay:.26s"><div class="ben-icon">🌎</div><h3>Receta Maya Chontal</h3><p>Elaboración ancestral heredada por generaciones en Comalcalco, Tabasco.</p></div>
+            <div class="ben-card reveal" style="--delay:.33s"><div class="ben-icon">✅</div><h3>Cero Aditivos</h3><p>Sin conservadores, colorantes ni grasas añadidas — cacao puro del grano a tu mesa.</p></div>
+            <div class="ben-card reveal" style="--delay:.40s"><div class="ben-icon">🚚</div><h3>Envíos a Todo México</h3><p>Compra por kilo o al mayoreo (+30 kg) con precios preferenciales y envío coordinado.</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════ ESTADÍSTICAS ═══════ -->
+<section id="estadisticas" class="s-red">
+    <div class="s-wrap">
+        <div class="stats-grid">
+            <div class="stat-item reveal" style="--delay:.05s">
+                <div class="stat-val"><strong class="counter" data-target="150">0</strong><span>+</span></div>
+                <p>Años de tradición familiar</p>
+            </div>
+            <div class="stat-item reveal" style="--delay:.25s">
+                <div class="stat-val"><strong class="counter" data-target="6">0</strong><span>+</span></div>
+                <p>Variedades de cacao</p>
+            </div>
+            <div class="stat-item reveal" style="--delay:.35s">
+                <div class="stat-val"><strong class="counter" data-target="100">0</strong><span>%</span></div>
+                <p>Artesanal y sin aditivos</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════ TESTIMONIOS ═══════ -->
+<section id="testimonios" class="s-white">
+    <div class="s-wrap">
+        <div class="s-head s-head-center reveal">
+            <span class="s-label s-label-center">Lo Que Dicen</span>
+            <h2 class="s-title">Clientes que ya<br>Disfrutan Chocord</h2>
+        </div>
+        <div class="testi-grid">
+            <article class="testi-card reveal" style="--delay:.05s">
+                <div class="stars">★★★★★</div>
+                <blockquote>"El cacao fermentado tiene un aroma espectacular, se nota que todo el proceso es artesanal. Desde que lo conocí no compro cacao en ningún otro lado."</blockquote>
+                <div class="testi-author">
+                    <div class="testi-av" style="background:#6FAE5A">M</div>
+                    <div><strong>Mariana G.</strong><span>Chocolatera</span></div>
+                </div>
+            </article>
+            <article class="testi-card reveal" style="--delay:.12s">
+                <div class="stars">★★★★★</div>
+                <blockquote>"Compré cacao por mayoreo para mi negocio de chocolate de mesa y la calidad es constante en cada pedido. Excelente trato y tiempos de entrega."</blockquote>
+                <div class="testi-author">
+                    <div class="testi-av" style="background:#D79A3B">R</div>
+                    <div><strong>Roberto T.</strong><span>Repostero</span></div>
+                </div>
+            </article>
+            <article class="testi-card reveal" style="--delay:.19s">
+                <div class="stars">★★★★★</div>
+                <blockquote>"Las nibs tostadas a la leña son increíbles, se siente el sabor ancestral maya chontal en cada bocado. 100% recomendado."</blockquote>
+                <div class="testi-author">
+                    <div class="testi-av" style="background:#558A43">C</div>
+                    <div><strong>Claudia P.</strong><span>Cliente frecuente</span></div>
+                </div>
+            </article>
+            <article class="testi-card reveal" style="--delay:.26s">
+                <div class="stars">★★★★★</div>
+                <blockquote>"Pedí la manteca de cacao natural para mis productos de cosmética artesanal y superó mis expectativas en pureza y aroma."</blockquote>
+                <div class="testi-author">
+                    <div class="testi-av" style="background:#B87F2A">M</div>
+                    <div><strong>Miguel A.</strong><span>Emprendedor</span></div>
+                </div>
+            </article>
+            <article class="testi-card reveal" style="--delay:.33s">
+                <div class="stars">★★★★★</div>
+                <blockquote>"Llevo años tomando el polvillo tabasqueño en las mañanas, me recuerda al chocolate de mi abuela. Un producto con alma."</blockquote>
+                <div class="testi-author">
+                    <div class="testi-av" style="background:#6FAE5A">P</div>
+                    <div><strong>Patricia S.</strong><span>Cliente</span></div>
+                </div>
+            </article>
+            <article class="testi-card reveal" style="--delay:.40s">
+                <div class="stars">★★★★★</div>
+                <blockquote>"Muy buena atención por WhatsApp, resolvieron todas mis dudas sobre los procesos del cacao antes de comprar. Se nota el conocimiento de la familia Chocord."</blockquote>
+                <div class="testi-author">
+                    <div class="testi-av" style="background:#D79A3B">J</div>
+                    <div><strong>Jorge L.</strong><span>Cliente</span></div>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════ CTA ═══════ -->
+<section id="cta" class="s-dark">
+    <div class="cta-bg"></div>
+    <div class="s-wrap">
+        <div class="cta-inner reveal">
+            <span class="s-label s-label-white">¿Listo para Probarlo?</span>
+            <h2 class="s-title s-title-light">Tu Pedido de Cacao<br>Empieza con un Mensaje</h2>
+            <p class="s-sub s-sub-light">Escríbenos por WhatsApp y te asesoramos sobre procesos, precios de mayoreo y tiempos de entrega — sin compromiso.</p>
+            <div class="cta-btns">
+                <a href="https://wa.me/529931358045?text=Hola%20Chocord%2C%20me%20gustar%C3%ADa%20recibir%20asesor%C3%ADa%20para%20hacer%20un%20pedido." target="_blank" rel="noopener" class="btn-wa-big">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+                    Chatear por WhatsApp
+                </a>
+                <a href="#colecciones" class="btn-cat-ghost">Ver Todos los Productos →</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════ CONTACTO ═══════ -->
+<section id="contacto" class="s-gray">
+    <div class="s-wrap">
+        <div class="contact-grid">
+            <div class="contact-info reveal">
+                <span class="s-label">Contáctanos</span>
+                <h2 class="s-title">Escríbenos y Cotiza<br>tu Pedido de Cacao</h2>
+                <p class="s-sub">Resolvemos tus dudas sobre procesos, precios de mayoreo y envíos. Respuesta rápida por WhatsApp.</p>
+                <div class="contact-items">
+                    <div class="contact-item"><div class="ci-icon">📱</div><div><strong>WhatsApp</strong><span>+52 993 135 8045</span></div></div>
+                    <div class="contact-item"><div class="ci-icon">📍</div><div><strong>Ubicación</strong><span>Reyes Hernández 2da Sección, Comalcalco, Tabasco, México 86655</span></div></div>
+                    <div class="contact-item"><div class="ci-icon">🕐</div><div><strong>Atención</strong><span>Escríbenos cualquier día — respondemos lo antes posible</span></div></div>
+                </div>
+                <div class="contact-map" style="margin:20px 0;border-radius:12px;overflow:hidden;">
+                    <iframe src="https://www.google.com/maps?q=Reyes+Hern%C3%A1ndez+2da+Secci%C3%B3n%2C+Comalcalco%2C+Tabasco%2C+M%C3%A9xico+86655&output=embed" width="100%" height="240" style="border:0;display:block;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="social-row">
+                    <a href="https://www.facebook.com/Chocord" target="_blank" rel="noopener" class="soc-btn" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                    </a>
+                    <a href="https://wa.me/529931358045" target="_blank" rel="noopener" class="soc-btn" aria-label="WhatsApp">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="contact-form-wrap reveal" style="--delay:.2s">
+                <div class="contact-form">
+                    <h3>Solicita tu Cotización</h3>
+                    <p>Cuéntanos qué producto te interesa y te respondemos con precios y disponibilidad.</p>
+                    <form id="wa-form" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nombre completo</label>
+                                <input type="text" id="name" required placeholder="Ej. Nombre Apellido" autocomplete="name">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Teléfono (opcional)</label>
+                                <input type="tel" id="phone" placeholder="Ej. 993 000 0000" autocomplete="tel">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="interest">¿Qué producto te interesa?</label>
+                            <select id="interest" required>
+                                <option value="" disabled selected>Selecciona una opción</option>
+                                <option value="Cacao en Grano (Lavado/Fermentado/Beneficiado)">Cacao en Grano (Lavado/Fermentado/Beneficiado)</option>
+                                <option value="Mazorcas de Cacao">Mazorcas de Cacao</option>
+                                <option value="Nibs de Cacao Tostado">Nibs de Cacao Tostado</option>
+                                <option value="Chocolate de Mesa">Chocolate de Mesa</option>
+                                <option value="Manteca de Cacao">Manteca de Cacao</option>
+                                <option value="Cacao en Polvo / Polvillo">Cacao en Polvo / Polvillo</option>
+                                <option value="Pedido por Mayoreo">Pedido por Mayoreo</option>
+                                <option value="Otro">Otro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Cuéntanos más (opcional)</label>
+                            <textarea id="message" placeholder="Ej. Busco 5 kg de cacao fermentado para mi chocolatería..." rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn-form-submit">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+                            Solicitar Cotización
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer id="footer">
+    <div class="footer-wrap">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <img src="img/logo.png" alt="Chocord" class="footer-logo-img">
+                <p>Familia productora y transformadora de cacao desde 1870. Cultivamos, procesamos y tostamos cada grano en nuestra hacienda de Comalcalco, Tabasco, preservando la tradición ancestral Maya Chontal.</p>
+                <div class="footer-soc">
+                    <a href="https://www.facebook.com/Chocord" target="_blank" rel="noopener" aria-label="Facebook">FB</a>
+                    <a href="https://wa.me/529931358045" target="_blank" rel="noopener" aria-label="WhatsApp">WA</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Productos</h4>
+                <ul>
+                    <li><a href="#colecciones">Cacao en Grano</a></li>
+                    <li><a href="#colecciones">Chocord Ancestral</a></li>
+                    <li><a href="#colecciones">Mazorcas de Cacao</a></li>
+                    <li><a href="#catalogo-visual">Catálogo Visual</a></li>
+                    <li><a href="#colecciones">Ver Todos los Productos</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Empresa</h4>
+                <ul>
+                    <li><a href="#especialidades">Nuestra Hacienda</a></li>
+                    <li><a href="#beneficios">¿Por qué Chocord?</a></li>
+                    <li><a href="#proceso">Nuestro Proceso</a></li>
+                    <li><a href="#testimonios">Reseñas</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <ul>
+                    <li><a href="https://wa.me/529931358045" target="_blank" rel="noopener">WhatsApp Directo</a></li>
+                    <li><a href="#contacto">Solicitar Cotización</a></li>
+                    <li><a href="https://www.facebook.com/Chocord" target="_blank" rel="noopener">Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Chocord — Secadora de Cacao. Todos los derechos reservados.</p>
+            <p>Comalcalco, Tabasco · México</p>
+        </div>
+    </div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/529931358045" target="_blank" rel="noopener" class="wa-float" aria-label="Contactar a Chocord por WhatsApp">
+    <span class="wa-tip">¡Escríbenos!</span>
+    <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+</a>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
