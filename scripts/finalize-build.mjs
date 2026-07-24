@@ -3,8 +3,7 @@ import {
   copyFile,
   cp,
   mkdir,
-  readdir,
-  writeFile
+  readdir
 } from "node:fs/promises";
 import path from "node:path";
 
@@ -44,14 +43,5 @@ for (const filename of ["index.html", "styles.css", "app.js"]) {
 }
 
 const workerEntry = await findWorkerEntry(distDir);
-const relativeEntry = path
-  .relative(serverDir, workerEntry)
-  .split(path.sep)
-  .join("/");
-
 await mkdir(serverDir, { recursive: true });
-await writeFile(
-  path.join(serverDir, "index.js"),
-  `export { default } from ${JSON.stringify(relativeEntry)};\n`,
-  "utf8"
-);
+await copyFile(workerEntry, path.join(serverDir, "index.js"));
