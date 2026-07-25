@@ -1,0 +1,9 @@
+node_modules
+dist
+.wrangler
+.openai
+scripts
+worker
+vite.config.js
+package.json
+package-lock.json
