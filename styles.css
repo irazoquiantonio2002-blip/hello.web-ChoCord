@@ -1237,6 +1237,24 @@ textarea, input, select { font-family:var(--font); }
 .catalog-grid-menu {
     grid-template-columns: repeat(4, 1fr);
 }
+.catalog-price-note {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    margin-top: 22px;
+    padding: 12px 20px;
+    border-radius: 999px;
+    background: rgba(37,211,102,.1);
+    color: #1a9e4e;
+    font-size: .85rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background .3s, transform .3s;
+}
+.catalog-price-note:hover {
+    background: rgba(37,211,102,.18);
+    transform: translateY(-2px);
+}
 .catalog-card {
     display: block;
     position: relative;
